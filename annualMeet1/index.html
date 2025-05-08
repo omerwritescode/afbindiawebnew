@@ -329,15 +329,215 @@
                     <!-- Right Side: Conference Photo -->
                     <div style="flex: 0.4; min-width: 220px; text-align: right;">
                         <img src="../images/presentation photo icon.png" alt="Conference Photo" 
-                             style="width: 110px; height: auto; border-radius: 8px; box-shadow: 2px 2px 8px rgba(0,0,0,0.15); margin-top: 45px; margin-right: 43px; border: solid 3px; padding: 10px;"><p style="margin-top: 110px; color: rgb(152, 114, 121);">                              View Conference Photo
-                            </p>
-                             <p style="margin-top: 8px;">
-                                <a href="conference-report.pdf" target="_blank" 
-                                   style="text-decoration: none; color: #41CBB4; font-weight: bold; margin-top: 40px;">
-                                  
-                                </a>
-                            </p>
-                    </div>
+                             style="width: 110px; height: auto; border-radius: 8px; box-shadow: 2px 2px 8px rgba(0,0,0,0.15); margin-top: 45px; margin-right: 43px; border: solid 3px; padding: 10px; cursor: pointer;"
+                             onclick="openConferenceModal()">
+                        <p style="margin-top: 110px; color: rgb(152, 114, 121); cursor: pointer;" onclick="openConferenceModal()">
+                          View Conference Photo
+                        </p>
+                      </div>
+<!-- Conference Photo Modal -->
+<div id="conferenceModal" class="modal">
+    <div class="modal-content-box">
+      <span class="close" onclick="closeConferenceModal()">&times;</span>
+      <h2 style="text-align:center;">Conference Photo Categories</h2>
+  
+      <!-- Category Buttons -->
+      <div class="tab-buttons">
+        <button class="tab-btn" onclick="showConferenceCategory('Inaugural Session')">Inaugural Session</button>
+        <button class="tab-btn" onclick="showConferenceCategory('Lead Talks And Keynote Address')">Lead Talks And Keynote Address</button>
+        <button class="tab-btn" onclick="showConferenceCategory('Oral Presentaions')">Oral Presentaions</button>
+        <button class="tab-btn" onclick="showConferenceCategory('Poster Presentaions')">Poster Presentaions</button>
+        <button class="tab-btn" onclick="showConferenceCategory('Valedictory Session')">Valedictory Session</button>
+
+      </div>
+  
+      <!-- Image Tabs -->
+      <div id="Inaugural Session" class="gallery-tab">
+        <img src="../images/Inaugural Session/20231201_100103amByGPSMapCamera.jpg" alt="Opening 1" onclick="openLightbox(this)">
+        <img src="../images/Inaugural Session/20231201_100250amByGPSMapCamera.jpg" alt="Opening 2" onclick="openLightbox(this)">
+        <img src="../images/Inaugural Session/20231201_100349amByGPSMapCamera.jpg" alt="Opening 2" onclick="openLightbox(this)">
+        <img src="../images/Inaugural Session/20231201_100434amByGPSMapCamera.jpg" alt="Opening 2" onclick="openLightbox(this)">
+        <img src="../images/Inaugural Session/20231201_94155amByGPSMapCamera.jpg" alt="Opening 2" onclick="openLightbox(this)">
+        <img src="../images/Inaugural Session/20231201_95328amByGPSMapCamera.jpg" alt="Opening 2" onclick="openLightbox(this)">
+        <img src="../images/Inaugural Session/20231201_95702amByGPSMapCamera.jpg" alt="Opening 2" onclick="openLightbox(this)">
+      </div>
+  
+      <div id="Lead Talks And Keynote Address" class="gallery-tab">
+        <img src="../images/Lead Talks and Keynote Address/20231201_103540amByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/Lead Talks and Keynote Address/20231201_103917amByGPSMapCamera.jpg" alt="Panel 2" onclick="openLightbox(this)" >
+        <img src="../images/Lead Talks and Keynote Address/20231201_23327pmByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/Lead Talks and Keynote Address/20231201_30439pmByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/Lead Talks and Keynote Address/20231201_33714pmByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/Lead Talks and Keynote Address/20231202_102437AMByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/Lead Talks and Keynote Address/20231202_32212pmByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/Lead Talks and Keynote Address/20231202_35459PMByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/Lead Talks and Keynote Address/20231202_94215amByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+      </div>
+  
+      <div id="Oral Presentaions" class="gallery-tab">
+        <img src="../images/Oral Presentations/20231201_10842pmByGPSMapCamera.jpg" alt="Audience 1" onclick="openLightbox(this)">
+        <img src="../images/Oral Presentations/20231201_11902pmByGPSMapCamera.jpg" alt="Audience 2" onclick="openLightbox(this)">
+        <img src="../images/Oral Presentations/20231201_124739pmByGPSMapCamera.jpg" alt="Audience 1" onclick="openLightbox(this)">
+        <img src="../images/Oral Presentations/20231201_125903pmByGPSMapCamera.jpg" alt="Audience 1" onclick="openLightbox(this)">
+        <img src="../images/Oral Presentations/20231202_125123pmByGPSMapCamera.jpg" alt="Audience 1" onclick="openLightbox(this)">
+      </div>
+
+      <div id="Poster Presentaions" class="gallery-tab">
+        <img src="../images/Poster Presentations/20231201_121930pmByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/Poster Presentations/20231201_122816pmByGPSMapCamera.jpg" alt="Panel 2" onclick="openLightbox(this)">
+        <img src="../images/Poster Presentations/20231201_122848pmByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/Poster Presentations/20231201_122941pmByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/Poster Presentations/20231201_123224PMByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+      </div>
+
+      <div id="Valedictory Session" class="gallery-tab">
+        <img src="../images/Valedictory Session/20231202_40613pmByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/Valedictory Session/20231202_40734PMByGPSMapCamera.jpg" alt="Panel 2" onclick="openLightbox(this)">
+        <img src="../images/Valedictory Session/20231202_41446PMByGPSMapCamera.jpg" alt="Panel 2" onclick="openLightbox(this)">
+        <img src="../images/Valedictory Session/20231202_41534pmByGPSMapCamera.jpg" alt="Panel 2" onclick="openLightbox(this)">
+        <img src="../images/Valedictory Session/20231202_44850pmByGPSMapCamera.jpg" alt="Panel 2" onclick="openLightbox(this)">
+        <img src="../images/Valedictory Session/20231202_44948pmByGPSMapCamera.jpg" alt="Panel 2" onclick="openLightbox(this)">
+        
+      </div>
+    </div>
+  </div>
+  
+  <!-- Lightbox -->
+  <div id="lightboxModal" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightboxImg">
+    <div id="lightboxCaption"></div>
+  </div>
+
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 900;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.85);
+      overflow: auto;
+      margin-top: 5rem;
+      padding-bottom: -20px;
+
+    }
+    .modal-content-box {
+      background: #fff;
+      margin: 5% auto;
+      padding: 30px;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 12px;
+      position: relative;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      animation: fadeIn 0.4s ease-in-out;
+
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+    }
+    .tab-buttons {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .tab-buttons .tab-btn {
+      background: #41CBB4;
+      color: white;
+      border: none;
+      margin: 10px;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .tab-buttons .tab-btn:hover {
+      background: #0b7e6b;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    .gallery-tab {
+      display: none;
+      text-align: center;
+      animation: fadeIn 0.5s ease;
+    }
+    .gallery-tab img {
+      width: 150px;
+      margin: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      border: solid;
+      border-color: #0b7e6b;
+    }
+    .gallery-tab img:hover {
+      transform: scale(1.05);
+    }
+    .gallery-tab.active {
+      display: block;
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.95);
+    }
+    .lightbox-content {
+      display: block;
+      margin: 5% auto;
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 12px;
+    }
+    #lightboxCaption {
+      text-align: center;
+      color: #fff;
+      padding: 12px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    </style>
+
+<script>
+    function openConferenceModal() {
+      document.getElementById('conferenceModal').style.display = 'block';
+    }
+    function closeConferenceModal() {
+      document.getElementById('conferenceModal').style.display = 'none';
+      let tabs = document.getElementsByClassName('gallery-tab');
+      for (let tab of tabs) {
+        tab.classList.remove('active');
+      }
+    }
+    function showConferenceCategory(category) {
+      let tabs = document.getElementsByClassName('gallery-tab');
+      for (let tab of tabs) {
+        tab.classList.remove('active');
+      }
+      document.getElementById(category).classList.add('active');
+    }
+    function openLightbox(imgElement) {
+      document.getElementById('lightboxModal').style.display = 'block';
+      document.getElementById('lightboxImg').src = imgElement.src;
+      document.getElementById('lightboxCaption').innerText = imgElement.alt;
+    }
+    function closeLightbox() {
+      document.getElementById('lightboxModal').style.display = 'none';
+    }
+    </script>
+    
                 </div>
             </div>
             
