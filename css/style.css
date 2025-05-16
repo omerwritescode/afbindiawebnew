@@ -1423,20 +1423,20 @@ img{
 	color: #3f4161;
 }
 
-.header-style-two.fixed-header{
+/* .header-style-two.fixed-header{
 	box-shadow: 0 0 30px rgba(0,0,0,0.10);
-}
+} */
 
-.main-header.header-style-two.fixed-header .main-box{
+/* .main-header.header-style-two.fixed-header .main-box{
 	background-color: #ffffff;
 	padding: 0;
-}
+} */
 
-.header-style-two.fixed-header .outer-box,
+/* .header-style-two.fixed-header .outer-box,
 .header-style-two.fixed-header .logo-box,
 .header-style-two.fixed-header .main-menu .navigation > li{
 	padding: 10px 0;
-}
+} */
 
 /***
 
@@ -1475,9 +1475,9 @@ img{
 
 ***/
 
-.main-header.fixed-header .main-box{
-	padding: 10px 0;
-	background-color: #101130;
+.main-header .main-box{
+	padding: 0 0;
+	background-color: #ffffff;
 }
 
 /***
@@ -10136,11 +10136,11 @@ img{
 .header-top{
 	position:relative;
 	background-color:#ec167f;
-	-webkit-transition:all 600ms ease;
+	/* -webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
 	-o-transition:all 600ms ease;
 	-moz-transition:all 600ms ease;
-	transition:all 600ms ease;
+	transition:all 600ms ease; */
 }
 
 .header-top .top-left{
@@ -10178,11 +10178,11 @@ img{
 	position:relative;
 	color:#ffffff;
 	font-size:14px;
-	-webkit-transition:all 0.3s ease;
+	/* -webkit-transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
 	-ms-transition:all 0.3s ease;
 	-o-transition:all 0.3s ease;
-	transition:all 0.3s ease;
+	transition:all 0.3s ease; */
 }
 
 .header-top .social-links li a:hover{
@@ -10211,13 +10211,13 @@ img{
 	color:#ffffff;
 }
 
-.main-header.header-style-two.alternate-two.fixed-header .outer-box .search-box-btn,
-.main-header.header-style-two.alternate-two.fixed-header .main-menu .navigation > li > a{
+.main-header.header-style-two.alternate-two .outer-box .search-box-btn,
+.main-header.header-style-two.alternate-two .main-menu .navigation > li > a{
 	color:#000000;
 }
 
-.main-header.header-style-two.alternate.fixed-header .header-top,
-.main-header.header-style-two.alternate-two.fixed-header .header-top-two{
+.main-header.header-style-two.alternate .header-top,
+.main-header.header-style-two.alternate-two .header-top-two{
 	display:none;
 }
 
@@ -10233,11 +10233,11 @@ img{
 	padding:150px 0px 350px;
 	background-size:cover;
 	background-repeat:no-repeat;
-	-webkit-transition:all 600ms ease;
+	/* -webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
 	-o-transition:all 600ms ease;
 	-moz-transition:all 600ms ease;
-	transition:all 600ms ease;
+	transition:all 600ms ease; */
 }
 
 .banner-section-two .outer-container{
