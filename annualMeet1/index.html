@@ -42,7 +42,7 @@
                         <a href="../index.html" style="display: flex; align-items: center; margin-top: -10px;">
                             <img src="../images/icons/afblogo index.png" alt="" title=""
                                 style="width: 70px; height: auto; margin-right: 10px; margin-top: -110px;">
-                            <p style="color: #41CBB4; margin-top: 5px; font-size: 32px;"><b>ASSOCIATION OF <br> FUNGAL BIOLOGISTS
+                            <p style="color: #41CBB4; margin-top: 5px; font-size: 20px;"><b>ASSOCIATION OF <br> FUNGAL BIOLOGISTS
                             </b></p>
                         </a>
                     </div>
@@ -122,7 +122,7 @@
                                     <li class="dropdown current"><a style="text-decoration: none; font-size: 13px;" href="#">Annual Meet</a>
                                         <ul>
                                             <li><a style="text-decoration: none;" href="../annualMeet1/index.html">1st
-                                                    Annual Meet (December 2023)</a></li>
+                                                    Annual Meet</a></li>
                                             <li><a style="text-decoration: none;" href="../annualMeet2/index.html">2nd
                                                     Annual Meet</a></li>
                                                     <li><a href="../annualMeet3/index.html">3rd Annual Meet</a></li>
@@ -153,14 +153,15 @@
                                         </ul>
                                     </li>
 
+                                                                        <li><a style="text-decoration: none; font-size: 13px;" href="../contactUs/index.html">Contact
+                                            Us</a></li>
+
                                     <li class="dropdown"><a style="text-decoration: none; font-size: 13px;" href="#">More</a>
                                         <ul>
                                             <li><a style="text-decoration: none;"
                                                     href="../photoGallery/index.html">Photo Gallery</a></li>
                                             <li><a style="text-decoration: none;"
                                                     href="../usefulLinks/index.html">Useful Links</a></li>
-                                            <li><a style="text-decoration: none;" href="../contactUs/index.html">Contact
-                                                    Us</a>
                                         </ul>
                                     </li>
 
@@ -380,6 +381,9 @@
         <img src="../images/annualmeet1/Inaugural Session/20231201_94155amByGPSMapCamera.jpg" alt="Opening 2" onclick="openLightbox(this)">
         <img src="../images/annualmeet1/Inaugural Session/20231201_95328amByGPSMapCamera.jpg" alt="Opening 2" onclick="openLightbox(this)">
         <img src="../images/annualmeet1/Inaugural Session/20231201_95702amByGPSMapCamera.jpg" alt="Opening 2" onclick="openLightbox(this)">
+        <img src="../images/annualmeet1/Inaugural Session/1.jpg" alt="Opening 2" onclick="openLightbox(this)">
+        <img src="../images/annualmeet1/Inaugural Session/2.jpg" alt="Opening 2" onclick="openLightbox(this)">
+        <img src="../images/annualmeet1/Inaugural Session/3.jpg" alt="Opening 2" onclick="openLightbox(this)">
       </div>
   
       <div id="Lead Talks And Keynote Address" class="gallery-tab">
@@ -392,6 +396,10 @@
         <img src="../images/annualmeet1/Lead Talks and Keynote Address/20231202_32212pmByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
         <img src="../images/annualmeet1/Lead Talks and Keynote Address/20231202_35459PMByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
         <img src="../images/annualmeet1/Lead Talks and Keynote Address/20231202_94215amByGPSMapCamera.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/annualmeet1/Lead Talks and Keynote Address/1.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/annualmeet1/Lead Talks and Keynote Address/2.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/annualmeet1/Lead Talks and Keynote Address/3.jpg" alt="Panel 1" onclick="openLightbox(this)">
+        <img src="../images/annualmeet1/Lead Talks and Keynote Address/4.jpg" alt="Panel 1" onclick="openLightbox(this)">
       </div>
   
       <div id="Oral Presentaions" class="gallery-tab">
@@ -417,19 +425,54 @@
         <img src="../images/annualmeet1/Valedictory Session/20231202_41534pmByGPSMapCamera.jpg" alt="Panel 2" onclick="openLightbox(this)">
         <img src="../images/annualmeet1/Valedictory Session/20231202_44850pmByGPSMapCamera.jpg" alt="Panel 2" onclick="openLightbox(this)">
         <img src="../images/annualmeet1/Valedictory Session/20231202_44948pmByGPSMapCamera.jpg" alt="Panel 2" onclick="openLightbox(this)">
+        <img src="../images/annualmeet1/Valedictory Session/1.jpg" alt="Panel 2" onclick="openLightbox(this)">
         
       </div>
     </div>
   </div>
   
-  <!-- Lightbox -->
-  <div id="lightboxModal" class="lightbox">
-    <span class="close" onclick="closeLightbox()">&times;</span>
-    <img class="lightbox-content" id="lightboxImg">
-    <div id="lightboxCaption"></div>
-  </div>
+<!-- Lightbox -->
+<div id="lightboxModal" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightboxImg" class="lightbox-content" />
+  <div id="lightboxCaption"></div>
+
+  <!-- Arrow buttons -->
+  <span class="lightbox-arrow left" onclick="changeImage(-1)">&#10094;</span>
+  <span class="lightbox-arrow right" onclick="changeImage(1)">&#10095;</span>
+</div>
+  
+
+
+
 
   <style>
+
+   .lightbox-arrow {
+  position: fixed;
+  top: 50%;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+  user-select: none;
+  padding: 10px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.lightbox-arrow:hover {
+  background: rgba(0,0,0,0.6);
+}
+.lightbox-arrow.left {
+  left: 20px;
+}
+.lightbox-arrow.right {
+  right: 20px;
+}
+
+
     .modal {
       display: none;
       position: fixed;
@@ -438,7 +481,7 @@
       width: 100%; height: 100%;
       background: rgba(0,0,0,0.85);
       overflow: auto;
-      margin-top: 5rem;
+      margin-top: 12rem;
       padding-bottom: -20px;
 
     }
@@ -531,6 +574,33 @@
     </style>
 
 <script>
+
+  let currentImageIndex = 0;
+let currentTabImages = [];
+
+function openLightbox(imgElement) {
+  const gallery = imgElement.closest('.gallery-tab');
+  currentTabImages = Array.from(gallery.querySelectorAll('img'));
+  currentImageIndex = currentTabImages.indexOf(imgElement);
+
+  document.getElementById('lightboxImg').src = imgElement.src;
+  document.getElementById('lightboxCaption').innerText = imgElement.alt;
+  document.getElementById('lightboxModal').style.display = 'block';
+}
+
+function changeImage(direction) {
+  if (!currentTabImages.length) return;
+
+  currentImageIndex += direction;
+
+  if (currentImageIndex >= currentTabImages.length) currentImageIndex = 0;
+  if (currentImageIndex < 0) currentImageIndex = currentTabImages.length - 1;
+
+  const newImg = currentTabImages[currentImageIndex];
+  document.getElementById('lightboxImg').src = newImg.src;
+  document.getElementById('lightboxCaption').innerText = newImg.alt;
+}
+
     function openConferenceModal() {
       document.getElementById('conferenceModal').style.display = 'block';
     }
@@ -548,11 +618,7 @@
       }
       document.getElementById(category).classList.add('active');
     }
-    function openLightbox(imgElement) {
-      document.getElementById('lightboxModal').style.display = 'block';
-      document.getElementById('lightboxImg').src = imgElement.src;
-      document.getElementById('lightboxCaption').innerText = imgElement.alt;
-    }
+  
     function closeLightbox() {
       document.getElementById('lightboxModal').style.display = 'none';
     }

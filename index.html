@@ -23,50 +23,59 @@
 
 </head>
 
-    <style>
-        /* Marquee container */
-        .marquee-container {
-            position: fixed; /* Stays fixed while scrolling */
-            bottom: 0; /* Stick to the bottom */
-            width: 100%;
-            background: #faaC1D;
-            color: black;
-            font-size: 16px;
-            /* font-weight: bold; */
-            padding: 10px 0;
-            font-family: sans-serif;
-            overflow: hidden;
-            white-space: nowrap;
-            z-index: 1000; /* Ensures it stays on top of other elements */
+<style>
+    /* Marquee container */
+    .marquee-container {
+        position: fixed;
+        /* Stays fixed while scrolling */
+        bottom: 0;
+        /* Stick to the bottom */
+        width: 100%;
+        background: #faaC1D;
+        color: black;
+        font-size: 16px;
+        /* font-weight: bold; */
+        padding: 10px 0;
+        font-family: sans-serif;
+        overflow: hidden;
+        white-space: nowrap;
+        z-index: 1000;
+        /* Ensures it stays on top of other elements */
+    }
+
+    /* Marquee text animation */
+    .marquee-text {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(10%);
         }
 
-        /* Marquee text animation */
-        .marquee-text {
-            display: inline-block;
-            padding-left: 100%;
-            animation: marquee 20s linear infinite;
+        to {
+            transform: translateX(-100%);
         }
+    }
 
-        @keyframes marquee {
-            from { transform: translateX(10%); }
-            to { transform: translateX(-100%); }
-        }
+    /* Example content for testing */
+    .content {
+        height: 2000px;
+        background: linear-gradient(white, lightgray);
+        padding-bottom: 60px;
+        /* Ensure content does not overlap */
+    }
+</style>
 
-        /* Example content for testing */
-        .content {
-            height: 2000px;
-            background: linear-gradient(white, lightgray);
-            padding-bottom: 60px; /* Ensure content does not overlap */
-        }
-    </style>
-
-    <!-- Page Content (Just for demo) -->
+<!-- Page Content (Just for demo) -->
 
 
-    <!-- Marquee Section -->
-    <div class="marquee-container">
-        <span class="marquee-text">Our Upcoming Event: Annual Conference, 4-6 December, 2025</span>
-    </div>
+<!-- Marquee Section -->
+<div class="marquee-container">
+    <span class="marquee-text">Our Upcoming Event: Annual Conference, 4-6 December, 2025</span>
+</div>
 
 
 
@@ -91,8 +100,9 @@
                         <a href="index.html" style="display: flex; align-items: center; margin-top: -10px;">
                             <img src="images/icons/afblogo index.png" alt="" title=""
                                 style="width: 70px; height: auto; margin-right: 10px; margin-top: -110px;">
-                            <p style="color: #41CBB4; margin-top: 5px; font-size: 32px;"><b>ASSOCIATION OF <br> FUNGAL BIOLOGISTS
-                            </b></p>
+                            <p style="color: #41CBB4; margin-top: 5px; font-size: 20px;"><b>ASSOCIATION OF <br> FUNGAL
+                                    BIOLOGISTS
+                                </b></p>
                         </a>
                     </div>
 
@@ -104,32 +114,41 @@
                     <div class="header-top-two">
                         <div class="auto-container">
                             <div class="clearfix">
-        
+
                                 <!--Top Left-->
                                 <div class="top-left clearfix">
                                     <ul class="links clearfix" style="padding-left: 3rem;">
-                                        <li><a href="#" style="color: black;"><span class="icon fa fa-envelope"></span>fungalbiologist@gmail.com</a>
+                                        <li><a href="#" style="color: black;"><span
+                                                    class="icon fa fa-envelope"></span>fungalbiologist@gmail.com</a>
                                         </li>
-                                        <li><a href="#" style="color: black;"><span class="icon fa fa-envelope"></span>mycospectrum@gmail.com</a></li>
+                                        <li><a href="#" style="color: black;"><span
+                                                    class="icon fa fa-envelope"></span>mycospectrum@gmail.com</a></li>
                                         <!-- <li><a href="#"><span class="icon fa fa-clock"></span>Open Hours 09:00 am - 06:00 pm</a></li> -->
                                     </ul>
                                 </div>
-        
+
                                 <!--Top Right-->
                                 <div class="top-right clearfix">
                                     <ul class="social-icons">
                                         <li><a href="https://www.facebook.com/associationoffungalbiologists?mibextid=qi2Omg&rdid=wZqIu2JiNHTVmGsR&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FTz4PwBrUtBdVv3Pn%2F%3Fmibextid%3Dqi2Omg#"
-                                                target="_blank" style="color: black;"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/afb_mumbai?igsh=a2s1Y3M0NXhlejhr" style="color: black;" target="_blank"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="http://www.linkedin.com/in/association-of-fungal-biologists-a079402a2" target="_blank" style="color: black;"><span class="fab fa-linkedin-in"></span></a></li>
-                                        <li><a href="https://www.youtube.com/@AssociationOfFungalBiologists" style="color: black;" target="_blank"><span class="fab fa-youtube"></span></a></li>
-        
+                                                target="_blank" style="color: black;"><span
+                                                    class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://www.instagram.com/afb_mumbai?igsh=a2s1Y3M0NXhlejhr"
+                                                style="color: black;" target="_blank"><span
+                                                    class="fab fa-instagram"></span></a></li>
+                                        <li><a href="http://www.linkedin.com/in/association-of-fungal-biologists-a079402a2"
+                                                target="_blank" style="color: black;"><span
+                                                    class="fab fa-linkedin-in"></span></a></li>
+                                        <li><a href="https://www.youtube.com/@AssociationOfFungalBiologists"
+                                                style="color: black;" target="_blank"><span
+                                                    class="fab fa-youtube"></span></a></li>
+
                                     </ul>
-        
+
                                 </div>
-        
+
                             </div>
-        
+
                         </div>
                     </div>
 
@@ -150,31 +169,33 @@
 
                             <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix" style="margin-top: -10px; margin-right: 50px;">
-                                    <li><a style="text-decoration: none; font-size: 13px;"
+                                    <li class="current"><a style="text-decoration: none; font-size: 13px;"
                                             href="index.html">Home</a>
 
                                     </li>
-                                    <li class="current"><a href="aboutUs/index.html" style="font-size: 13px;">About</a>
+                                    <li><a href="aboutUs/index.html" style="font-size: 13px;">About</a>
 
                                     </li>
-                                    <li><a href="officeBearers/index.html" style="font-size: 13px;">Office Bearers</a></li>
+                                    <li><a href="officeBearers/index.html" style="font-size: 13px;">Office Bearers</a>
+                                    </li>
 
 
-                                   
-                             
+
+
 
                                     <li><a style="text-decoration: none; font-size: 13px;"
-                                        href="journal/index.html">Journals</a></li>
-                                <li><a href="awards/index.html" style="font-size: 13px;">Awards</a></li>
+                                            href="journal/index.html">Journals</a></li>
+                                    <li><a href="awards/index.html" style="font-size: 13px;">Awards</a></li>
 
 
-                                    <li class="dropdown"><a style="text-decoration: none; font-size: 13px;" href="#">Annual Meet</a>
+                                    <li class="dropdown"><a style="text-decoration: none; font-size: 13px;"
+                                            href="#">Annual Meet</a>
                                         <ul>
                                             <li><a style="text-decoration: none;" href="annualMeet1/index.html">1st
-                                                    Annual Meet (December 2023)</a></li>
+                                                    Annual Meet</a></li>
                                             <li><a style="text-decoration: none;" href="annualMeet2/index.html">2nd
                                                     Annual Meet</a></li>
-                                                    <li><a href="annualMeet3/index.html">3rd Annual Meet</a></li>
+                                            <li><a href="annualMeet3/index.html">3rd Annual Meet</a></li>
                                         </ul>
                                     </li>
 
@@ -190,7 +211,8 @@
 
                                     </li>
 
-                                    <li class=" dropdown"><a style="text-decoration: none; font-size: 13px" href="#">Activities</a>
+                                    <li class=" dropdown"><a style="text-decoration: none; font-size: 13px"
+                                            href="#">Activities</a>
                                         <ul>
                                             <li><a style="text-decoration: none;" href="onlineLec/index.html">Online
                                                     Lecture Series</a></li>
@@ -202,14 +224,16 @@
                                         </ul>
                                     </li>
 
-                                    <li class="dropdown"><a style="text-decoration: none; font-size: 13px;" href="#">More</a>
+                                    <li><a style="text-decoration: none; font-size: 13px;" href="contactUs/index.html">Contact
+                                            Us</a></li>
+
+                                    <li class="dropdown"><a style="text-decoration: none; font-size: 13px;"
+                                            href="#">More</a>
                                         <ul>
-                                            <li><a style="text-decoration: none;"
-                                                    href="photoGallery/index.html">Photo Gallery</a></li>
-                                            <li><a style="text-decoration: none;"
-                                                    href="usefulLinks/index.html">Useful Links</a></li>
-                                            <li><a style="text-decoration: none;" href="contactUs/index.html">Contact
-                                                    Us</a>
+                                            <li><a style="text-decoration: none;" href="photoGallery/index.html">Photo
+                                                    Gallery</a></li>
+                                            <li><a style="text-decoration: none;" href="usefulLinks/index.html">Useful
+                                                    Links</a></li>
                                         </ul>
                                     </li>
 
@@ -311,7 +335,7 @@
 
             <style>
                 @media screen and (max-width: 753px) {
-                    .home-title-margin{
+                    .home-title-margin {
                         margin-top: 2.5rem;
                     }
                 }
@@ -321,7 +345,9 @@
                 <div class="content-box">
                     <!-- <span class="title">1st to 10 March 2019, Gold-Land Hotel, Canada</span> -->
                     <h2 class="home-title-margin">(AFB)<br>ASSOCIATION OF FUNGAL BIOLOGISTS</h2>
-                    <p style="color: white; font-size: 20px;"><b>3rd Annual Meet of Association of Fungal Biologists and International Conference is scheduled from 4th-6th December 2025 at Govt. Of Maharashtra, Rajaram College, Vidyanagar, Kolhapur, Maharashtra...</b></style>
+                    <p style="color: white; font-size: 20px;"><b>3rd Annual Meet of Association of Fungal Biologists and
+                            International Conference is scheduled from 4th-6th December 2025 at Govt. Of Maharashtra,
+                            Rajaram College, Vidyanagar, Kolhapur, Maharashtra...</b></style>
                     </p>
                     <!-- <div class="time-counter"><div class="time-countdown clearfix" data-countdown="12/1/2019"></div></div> -->
                     <div class="btn-box"><a href="aboutUs/index.html" class="theme-btn btn-style-two"><span
@@ -339,12 +365,13 @@
                 <span class="icon icon-circle-1 wow zoomIn"></span>
             </div>
             <div class="auto-container">
-                
+
                 <div class="row">
-                    <h2 style="color: black; text-align: center; font-weight: 900; margin-top: -145px; width: 100%; font-size: 3rem;"> 
-                        <br>ASSOCIATION OF FUNGAL BIOLOGISTS 
+                    <h2
+                        style="color: black; text-align: center; font-weight: 900; margin-top: -145px; width: 100%; font-size: 3rem;">
+                        <br>ASSOCIATION OF FUNGAL BIOLOGISTS
                     </h2>
-                    
+
                     <!-- Content Column -->
                     <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
                         <div class="inner-column">
@@ -353,35 +380,45 @@
                                 <!-- <h2>Welcome to AFB ASSOCIATION OF FUNGAL BIOLOGISTS </h2> -->
                                 <div class="text">
                                     <p style="color: black;">
-                                        <b>The Association of Fungal Biologists (AFB)</b> is a global scientific body dedicated to advancing 
-                                        mycology through research, collaboration, and knowledge dissemination. Our mission is to bring 
-                                        together mycologists from various disciplines to explore the vast potential of fungi in <b>biotechnology, 
-                                        ecology, pathology,</b> and other allied sciences.
+                                        <b>The Association of Fungal Biologists (AFB)</b> is a global scientific body
+                                        dedicated to advancing
+                                        mycology through research, collaboration, and knowledge dissemination. Our
+                                        mission is to bring
+                                        together mycologists from various disciplines to explore the vast potential of
+                                        fungi in <b>biotechnology,
+                                            ecology, pathology,</b> and other allied sciences.
                                     </p>
-                                    
+
                                     <p style="color: black;">
-                                        With over <b>275 members</b>, including seasoned professionals, budding researchers, and students, 
-                                        AFB provides a platform for sharing knowledge and fostering scientific innovations in fungal biology. 
-                                        While our roots are in the <b>Indian subcontinent</b>, we actively engage with international mycologists, 
+                                        With over <b>275 members</b>, including seasoned professionals, budding
+                                        researchers, and students,
+                                        AFB provides a platform for sharing knowledge and fostering scientific
+                                        innovations in fungal biology.
+                                        While our roots are in the <b>Indian subcontinent</b>, we actively engage with
+                                        international mycologists,
                                         promoting cross-border research collaborations.
                                     </p>
-                                    
+
                                     <p style="color: black;">
-                                        <b>Join us</b> in our endeavour to explore, understand, and harness the power of fungi for human welfare!
+                                        <b>Join us</b> in our endeavour to explore, understand, and harness the power of
+                                        fungi for human welfare!
                                     </p>
-                                    
+
                                     <p style="color: black;">
                                         <b>Our Journal: Mycological Spectrum</b><br>
-                                        <b>Mycological Spectrum</b> is a new mycology journal publishing original research in 
-                                        <b>fungal taxonomy, genetics, molecular biology, ecology, conservation,</b> and <b>biotechnology</b>. 
-                                        As an open-access platform, it welcomes contributions from both academia and industry.
+                                        <b>Mycological Spectrum</b> is a new mycology journal publishing original
+                                        research in
+                                        <b>fungal taxonomy, genetics, molecular biology, ecology, conservation,</b> and
+                                        <b>biotechnology</b>.
+                                        As an open-access platform, it welcomes contributions from both academia and
+                                        industry.
                                     </p>
-                                    
+
                                     <p style="color: black;">
                                         <b>Latest News & Upcoming Events</b><br>
                                         Stay updated with the latest in mycology!
                                     </p>
-                                    
+
                                 </div>
                             </div>
                             <div class="row">
@@ -391,7 +428,7 @@
                                     <div class="text">Pearl Hotel, New York, USA</div>
                                 </div> -->
                                 </div>
-                                <div class="about-block col-lg-6 col-md-6 col-sm-12" >
+                                <div class="about-block col-lg-6 col-md-6 col-sm-12">
                                     <!-- <div class="inner-box">
                                     <h4><span class="icon fa fa-clock"></span> when</h4>
                                     <div class="text">January 20, 2020 09:00 AM</div>
@@ -403,20 +440,23 @@
                     </div>
 
                     <!-- Image Column -->
-                    <div class="col-lg-6 col-md-12 col-sm-12 align-self-center" >
+                    <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
                         <div class="image-box" style="text-align: center;">
                             <figure class="image wow fadeIn" style="display: inline-block;">
-                                <img src="images/DrDeshmukh.jpg" alt="" 
-                                    style="border-radius: 25px; border: 5px solid #41CBB4; margin-top: 0px; display: block; margin-left: auto; margin-right: auto;"></figure>
-                                <p style="text-align: center; font-weight: bold; margin-top: 110px; color: black; font-size: 25px;" >Dr. Sunil K. Deshmukh <br>(President)</p>
+                                <img src="images/DrDeshmukh.jpg" alt=""
+                                    style="border-radius: 25px; border: 5px solid #41CBB4; margin-top: 0px; display: block; margin-left: auto; margin-right: auto;">
+                            </figure>
+                            <p
+                                style="text-align: center; font-weight: bold; margin-top: 110px; color: black; font-size: 25px;">
+                                Dr. Sunil K. Deshmukh <br>(President)</p>
                             <br>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </section>
-            <!--End About Section -->
+        <!--End About Section -->
 
 
         <!-- Features Section Three -->
@@ -468,7 +508,7 @@
     <!--End Features Section -->
 
     <!-- Fluid Section One -->
-    <section class="fluid-section-one"  style="margin-top: -60px;">
+    <section class="fluid-section-one" style="margin-top: -60px;">
         <div class="outer-box clearfix">
 
             <!-- Content Column -->
@@ -479,11 +519,12 @@
                 </div>
                 <div class="inner-column">
                     <h3>UPCOMING EVENT</h3>
-                    <div class="text">International Conference and 3rd Annual Meet of the Association of Fungal Biologists (AFB).
-                        <br><b>Date:</b>4th December 2025 to 6th December 2025
+                    <div class="text">International Conference and 3rd Annual Meet of the Association of Fungal
+                        Biologists (AFB).
+                        <br><b>Date:</b> 4th December 2025 to 6th December 2025
                         <br><b>Venue:</b>
 
-                        <br>Venue: Rajaram College, Kolhapur, Maharashtra (India)
+                 Rajaram College, Kolhapur, Maharashtra (India)
                     </div>
                     <!-- <div class="btn-box"><a href="buy-ticket.html" class="theme-btn btn-style-four"><span class="btn-title">Buy Ticket</span></a></div> -->
                 </div>
@@ -500,7 +541,7 @@
     <!--End Fluid Section One -->
 
     <!-- Speakers Section -->
-    <section class="speakers-section-three" >
+    <section class="speakers-section-three">
         <div class="auto-container" style="margin-top: -100px;">
             <div class="sec-title text-center">
                 <span class="title"></span>
@@ -517,7 +558,8 @@
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#" style="color: black;">Prof. Dr. Marc Stadler</a></h4>
-                            <span class="designation" style="color: black;">International Mycological Association, Braunschweig, Germany</span>
+                            <span class="designation" style="color: black;">International Mycological Association,
+                                Braunschweig, Germany</span>
                         </div>
                         <div class="social-box">
                             <!-- <ul class="social-links social-icon-colored">
@@ -553,11 +595,33 @@
                 <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
+                            <figure class="image"><a href="#"><img src="images/profirina.jpg" alt=""></a></figure>
+                        </div>
+                        <div class="info-box">
+                            <h4 class="name"><a href="#" style="color: black;">Prof. Dr. Irina S. Druzhinina</a></h4>
+                            <span class="designation" style="color: black;">Kew Science, Royal Botanic Gardens, Kew,
+                                Richmond TW9 3AE, UK
+                            </span>
+                        </div>
+                        <div class="social-box">
+                            <!-- <ul class="social-links social-icon-colored">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="image-box">
                             <figure class="image"><a href="#"><img src="images/Dr_S_Raghukumar.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="#" style="color: black;">Dr S Raghukumar</a></h4>
-                            <span class="designation" style="color: black;">India</span>
+                            <h4 class="name"><a href="#" style="color: black;">Dr. Seshagiri Raghukumar</a></h4>
+                            <span class="designation" style="color: black;">Chief Scientific Officer, Avisa Myko, Inc. Goa</span>
                         </div>
                         <div class="social-box">
                             <!-- <ul class="social-links social-icon-colored">
@@ -577,7 +641,8 @@
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#" style="color: black;">Dr. Hesham A. El Enshasy</a></h4>
-                            <span class="designation" style="color: black;">Institute of Bioproduct Development (IBD), Johor Bahru, Malaysia</span>
+                            <span class="designation" style="color: black;">Institute of Bioproduct Development (IBD),
+                                Johor Bahru, Malaysia</span>
                         </div>
                         <div class="social-box">
                             <!-- <ul class="social-links social-icon-colored">
@@ -593,31 +658,13 @@
                 <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/ruangelieedradaebel.jpg" alt=""></a></figure>
-                        </div>
-                        <div class="info-box">
-                            <h4 class="name"><a href="#" style="color: black;">Dr. RuAngelie Edrada-Ebel</a></h4>
-                            <span class="designation" style="color: black;">Strathclyde Institute of Pharmacy and Biomedical Sciences, University of Strathclyde, Glasgow, UK</span>
-                        </div>
-                        <div class="social-box">
-                            <!-- <ul class="social-links social-icon-colored">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                            </ul> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/priyaniparanagama.jpg" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="images/priyaniparanagama.jpg" alt=""></a>
+                            </figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#" style="color: black;">Prof. Priyani A. Paranagama</a></h4>
-                            <span class="designation" style="color: black;">Department of Chemistry, University of Kelaniya, Sri Lanka</span>
+                            <span class="designation" style="color: black;">Department of Chemistry, University of
+                                Kelaniya, Sri Lanka</span>
                         </div>
                         <div class="social-box">
                             <!-- <ul class="social-links social-icon-colored">
@@ -656,46 +703,8 @@
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#" style="color: black;">Dr. Vijai Kumar Gupta</a></h4>
-                            <span class="designation" style="color: black;">School of Biotechnology, Dublin City University, Dublin 9, Ireland</span>
-                        </div>
-                        <div class="social-box">
-                            <!-- <ul class="social-links social-icon-colored">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                            </ul> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/abhijeetkate.jpg" alt=""></a>
-                            </figure>
-                        </div>
-                        <div class="info-box">
-                            <h4 class="name"><a href="#" style="color: black;">Dr. Abhijeet Kate</a></h4>
-                            <span class="designation" style="color: black;">Department of Natural Products, National Institute of Pharmaceutical Education & Research, Ahmedabad</span>
-                        </div>
-                        <div class="social-box">
-                            <!-- <ul class="social-links social-icon-colored">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                            </ul> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/Dr_Samantha.png" alt=""></a></figure>
-                        </div>
-                        <div class="info-box">
-                            <h4 class="name"><a href="#" style="color: black;">Dr. Samantha C. Karunarathna</a></h4>
-                            <span class="designation" style="color: black;">College of Biological Resource and Food Engineering, Qujing Normal University, Qujing, 655011, China</span>
+                            <span class="designation" style="color: black;">School of Biotechnology, Dublin City
+                                University, Dublin 9, Ireland</span>
                         </div>
                         <div class="social-box">
                             <!-- <ul class="social-links social-icon-colored">
@@ -716,7 +725,8 @@
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="#" style="color: black;">Prof. Kandikere Sridhar</a></h4>
-                            <span class="designation" style="color: black;">Department of Biosciences, Mangalore University, Mangalagangotri, Mangalore 574 199, Karnataka, India</span>
+                            <span class="designation" style="color: black;">Department of Biosciences, Mangalore
+                                University, Mangalagangotri, Mangalore 574 199, Karnataka, India</span>
                         </div>
                         <div class="social-box">
                             <!-- <ul class="social-links social-icon-colored">
@@ -736,7 +746,7 @@
                             <figure class="image"><a href="#"><img src="images/Dr_Shilpa.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="#" style="color: black;">Dr. Shipla A. Verekar</a></h4>
+                            <h4 class="name"><a href="#" style="color: black;">Dr. Shilpa A. Verekar</a></h4>
                             <span class="designation" style="color: black;">Parle Agro Pvt. Ltd. Mumbai</span>
                         </div>
                         <div class="social-box">
@@ -753,7 +763,7 @@
         </div>
     </section>
 
-    
+
     <!-- Main Footer -->
     <footer class="main-footer" style="margin-top: -100px;">
         <!--Widgets Section-->
@@ -814,11 +824,11 @@
                                                     style="font-size: 30px; padding: 10px; background-color: #FF0000; color: white; border-radius: 8px;"></i>
                                             </a>
 
-                                            <a href="https://www.instagram.com/afb_mumbai?igsh=a2s1Y3M0NXhlejhr" 
-                                            style="text-decoration: none; margin-right: 10px;" target="_blank">
-                                            <i class="fab fa-instagram"
-                                                style="font-size: 30px; padding: 10px; background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); color: white; border-radius: 8px;"></i>
-                                        </a>
+                                            <a href="https://www.instagram.com/afb_mumbai?igsh=a2s1Y3M0NXhlejhr"
+                                                style="text-decoration: none; margin-right: 10px;" target="_blank">
+                                                <i class="fab fa-instagram"
+                                                    style="font-size: 30px; padding: 10px; background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); color: white; border-radius: 8px;"></i>
+                                            </a>
                                         </div>
 
                                     </div>
